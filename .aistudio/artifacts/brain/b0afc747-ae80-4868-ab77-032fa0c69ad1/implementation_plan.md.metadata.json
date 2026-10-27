@@ -1,0 +1,6 @@
+{
+  "summary":  "Comprehensive implementation plan for client's 6 factory workflow enhancements:\n1. Threaded Stock In with Pearl bunches-per-packet and Metalizing bunches-or-KG packet modes with thread weight addition.\n2. Program from Admin/Owner scheduling machine production runs with target packets and raw lot allocation.\n3. Live process update ('What's Running In Machine') on the worker's workstation with active program, live packet tally, and machine cycle metrics.\n4. Lot & offer yield tracking showing exact packets extracted from each raw lot/program.\n5. Order Dispatch Update tracking packet dispatches per customer party with vehicle and challan details.\n6. 1-click Sales Invoicing with option for GST Tax Invoice or Kachcha Bill upon dispatch confirmation.",
+  "updatedAt":  "2026-10-27T11:28:28.383152426Z",
+  "requestFeedback":  true,
+  "userFacing":  true
+}

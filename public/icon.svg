@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pearlShine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="45%" stop-color="#E8E2D2" stop-opacity="0.8"/>
+      <stop offset="75%" stop-color="#C9A86A" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#2B2A4C" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1D2B"/>
+      <stop offset="100%" stop-color="#2B2A4C"/>
+    </linearGradient>
+    <radialGradient id="nacreGlow" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#FFFDF9"/>
+      <stop offset="35%" stop-color="#F2EDE4"/>
+      <stop offset="70%" stop-color="#D9BC84"/>
+      <stop offset="100%" stop-color="#8C7043"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Outer Rounded Square Container -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+  
+  <!-- Thread line threading through the beads -->
+  <path d="M 60 256 C 140 180, 200 320, 256 256 C 312 192, 372 332, 452 256" fill="none" stroke="#E6D7BC" stroke-width="8" stroke-dasharray="12 8" stroke-opacity="0.6"/>
+  
+  <!-- Central Lustrous Pearl Bead -->
+  <circle cx="256" cy="256" r="105" fill="url(#nacreGlow)" filter="drop-shadow(0px 14px 28px rgba(0,0,0,0.4))"/>
+  <!-- Bead reflection highlight -->
+  <ellipse cx="225" cy="215" rx="35" ry="22" fill="#FFFFFF" opacity="0.65" transform="rotate(-30 225 215)"/>
+  <circle cx="205" cy="195" r="8" fill="#FFFFFF" opacity="0.9"/>
+  
+  <!-- Flanking smaller beads on thread -->
+  <circle cx="130" cy="230" r="48" fill="url(#nacreGlow)" opacity="0.9" filter="drop-shadow(0px 8px 16px rgba(0,0,0,0.3))"/>
+  <ellipse cx="118" cy="212" rx="15" ry="9" fill="#FFFFFF" opacity="0.6" transform="rotate(-30 118 212)"/>
+  
+  <circle cx="382" cy="282" r="48" fill="url(#nacreGlow)" opacity="0.9" filter="drop-shadow(0px 8px 16px rgba(0,0,0,0.3))"/>
+  <ellipse cx="370" cy="264" rx="15" ry="9" fill="#FFFFFF" opacity="0.6" transform="rotate(-30 370 264)"/>
+
+  <!-- Subtle MK Monogram inside Pearl -->
+  <text x="256" y="278" font-family="'Marcellus', 'Georgia', serif" font-size="70" font-weight="bold" fill="#2B2A4C" text-anchor="middle" letter-spacing="2" opacity="0.85">MK</text>
+</svg>

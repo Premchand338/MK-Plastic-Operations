@@ -1,0 +1,6 @@
+{
+  "name": "MK Plastics Operations",
+  "description": "Multi-unit beads manufacturing and material traceability web app for MK Plastics / Beads Bazaar in Bhiwandi, Maharashtra.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

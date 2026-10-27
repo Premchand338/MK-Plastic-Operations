@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "MK Plastics Operations",
+  "short_name": "MK Plastics",
+  "description": "Multi-unit beads manufacturing and stock traceability for MK Plastics / Beads Bazaar Bhiwandi.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#2B2A4C",
+  "background_color": "#FBFAF7",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

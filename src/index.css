@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --navy: #2B2A4C;
+    --navy-light: #413F70;
+    --gold: #C9A86A;
+    --gold-light: #E0C797;
+    --sand: #E6D7BC;
+    --sand-light: #F4EFE6;
+    --pearl: #FBFAF7;
+    --card: #FFFFFF;
+    --ink: #1E1D2B;
+    --muted: #6B6878;
+    --border: #E8E5DF;
+
+    /* Unit Specific Colors */
+    --moulding: #4A5A7A;
+    --pearl-unit: #C98A9B;
+    --metalizing: #8E99A8;
+    --threading: #B98B4E;
+
+    /* Semantic */
+    --success: #2F8F6B;
+    --warning: #C98A1A;
+    --danger: #C0453A;
+  }
+
+  .dark {
+    --navy: #C9C8F0;
+    --navy-light: #2B2A4C;
+    --gold: #D9BC84;
+    --gold-light: #4A3F29;
+    --sand: #3A3326;
+    --sand-light: #252018;
+    --pearl: #17161F;
+    --card: #201F2B;
+    --ink: #ECEAF4;
+    --muted: #A6A3B5;
+    --border: #2E2D3E;
+
+    --moulding: #7B8CAE;
+    --pearl-unit: #D99EAE;
+    --metalizing: #B0BBC9;
+    --threading: #D1A366;
+
+    --success: #3DB88A;
+    --warning: #E09E2B;
+    --danger: #E05C50;
+  }
+}
+
+body {
+  font-family: 'Poppins', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--ink);
+  background-color: var(--pearl);
+}
+
+.font-heading {
+  font-family: 'Marcellus', 'Georgia', serif;
+}
+
+.font-hindi {
+  font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Nacre Iridescent Sheen for Hero & Active chips */
+.nacre-sheen {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(246, 240, 248, 0.75) 45%, rgba(248, 242, 226, 0.8) 100%);
+  border: 1px solid rgba(201, 168, 106, 0.25);
+  box-shadow: 0 4px 20px -2px rgba(43, 42, 76, 0.05);
+}
+
+.dark .nacre-sheen {
+  background: linear-gradient(135deg, rgba(32, 31, 43, 0.95) 0%, rgba(45, 43, 62, 0.8) 45%, rgba(55, 48, 38, 0.75) 100%);
+  border: 1px solid rgba(217, 188, 132, 0.2);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
+}
+
+/* Bead string progress component */
+.bead-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+}
+
+/* Safe area for mobile navigation */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
+
+/* Subtle print styles for tax invoices & dispatch slips */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+}
